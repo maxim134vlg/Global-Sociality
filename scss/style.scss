@@ -1,0 +1,204 @@
+$primary-color:#3f51b5;
+$headers-color:#e8eaf6;
+$accent-color:#3d5afe;
+
+h1{
+	color: $primary-color;
+}
+
+header{
+	background:$primary-color;
+	color:#fff;
+	min-height:100px;
+	padding-top:25px;
+
+	.logo{
+		float:left;
+		padding-bottom:10px;
+	}
+
+	form{
+		float:right;
+	}
+}
+
+// WALL SECTION
+
+.panel-heading{
+	background: $primary-color !important;
+	color:#fff !important;
+}
+
+.bubble{
+	position:relative;
+	width:580px;
+	min-height:65px;
+	padding:15px;
+	background: #fff;
+	border-radius: 10px;
+	border:1px solid #ccc;
+
+	&:before{
+		content: '';
+		position:absolute;
+		border-style:solid;
+		border-width:15px 15px 15px 0;
+		border-color:transparent #ccc;
+		display:block;
+		width:0;
+		z-index:0;
+		margin-top:-15px;
+		top:30%;
+		left:-16px;
+	}
+
+	&:after{
+		content: '';
+		position:absolute;
+		border-style:solid;
+		border-width:15px 15px 15px 0;
+		border-color:transparent #fff;
+		display:block;
+		width:0;
+		z-index:1;
+		margin-top:-15px;
+		top:30%;
+		left:-15px;
+	}
+}
+
+.cta {
+	background:$accent-color;
+	color:#fff;
+}
+
+// post style
+.post-action{
+	margin:5px;
+}
+
+
+// comments style
+
+.comment-form{
+	width:90%;
+	form{
+		input[type='text']{
+			width:100%;
+		}
+	}
+}
+
+.comment{
+	border:1px solid $primary-color;
+	border-radius:5px;
+	padding:3px;
+	margin:5px 0;
+	overflow:auto;
+	width:100%;
+}
+
+.comment-avatar{
+	img{
+		width:40px;
+		margin-right:5px;
+	}
+}
+
+// FRIENDS SECTION
+
+.friends{
+	li{
+		list-style: none;
+		padding:0 5px;
+		display:inline;
+		float:left;
+	}
+	img{
+		width:60px;
+	}
+}
+
+// GROUPS SECTION
+
+.groups{
+	img{
+		width:60px;
+		float: left;
+		margin-right: 15px;
+	}
+}
+
+.group-item{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $primary-color;
+	overflow: auto;
+}
+
+// MEMBERS SECTION
+
+.row-members{
+	border-bottom: 1px solid $primary-color;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+
+	img{
+		margin-bottom: 5px;
+	}
+}
+
+// PROFILE SECTION
+
+.profile{
+	ul{
+		margin-top:30px;
+	}
+
+	li{
+		list-style: none;
+		line-height: 2em;
+	}
+}
+
+.fitures{
+	margin-bottom:30px;
+}
+
+// PHOTOS SECTION
+
+.photos{
+	margin:0;
+	padding:0;
+
+	li{
+		list-style: none;
+		float: left;
+		margin: 5px;
+		width: 23%;
+	}
+
+	img{
+		width:100%;
+	}
+}
+
+// FOOTER SECTION
+
+footer{
+	background: $primary-color;
+	color: #fff;
+	padding-top:30px;
+	margin-top:40px;
+	font-weight:bold;
+	height:100px;
+	text-align: center;
+	border-top: 7px solid $headers-color;
+}
+
+
+@media (min-width: 991px) {
+      .members p{
+        padding-top:40px;
+      }
+}
